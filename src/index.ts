@@ -8,7 +8,7 @@ const api = new Elysia({ prefix: '/api' }).use(v1);
 
 const PORT = Number.parseInt(process.env.PORT ?? '3000');
 
-new Elysia()
+const app = new Elysia()
   .use(cors())
   .use(Logestic.preset('fancy'))
   .use(api)
@@ -23,3 +23,5 @@ new Elysia()
   .listen(PORT);
 
 console.log(`🦊 Elysia server started on ${PORT}`);
+
+export default app;
